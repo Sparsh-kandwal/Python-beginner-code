@@ -1,1 +1,1 @@
-This is my demo repository for learning about git and GitHub here i am uploading all my codes that i have practiced while learning and practicing python as a beginner 
+Hello Everyone This is my demo repository for learning about git and GitHub here I am uploading all the codes that I have practiced while learning and practicing Python as a beginner 
