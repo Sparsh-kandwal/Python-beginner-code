@@ -1,0 +1,163 @@
+PS F:\python for beginear> git init
+Reinitialized existing Git repository in F:/python for beginear/.git/
+PS F:\python for beginear> dir
+
+
+    Directory: F:\python for beginear
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        22-06-2024     18:31            167 READ ME.txt
+
+
+PS F:\python for beginear> git config --global user.name
+Sparsh Kandwal
+PS F:\python for beginear> git congig --global user.email
+git: 'congig' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+PS F:\python for beginear> git config --global user.email
+sparshkandwal@outlook.com
+PS F:\python for beginear> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        READ ME.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS F:\python for beginear> git add READ ME.txt
+fatal: pathspec 'READ' did not match any files
+PS F:\python for beginear> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS F:\python for beginear> git add README.txt
+PS F:\python for beginear> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.txt
+
+PS F:\python for beginear> git commit -m "This is the first commit"
+[master (root-commit) 36e2dc0] This is the first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.txt
+PS F:\python for beginear> git status
+On branch master
+nothing to commit, working tree clean
+PS F:\python for beginear> git branch
+* master
+PS F:\python for beginear> git branch -M main
+PS F:\python for beginear> git branch
+* main
+PS F:\python for beginear> git remote add origin https://github.com/Sparsh-kandwal/Python-beginner-code.git
+PS F:\python for beginear> git status
+On branch main
+nothing to commit, working tree clean
+PS F:\python for beginear> git remote -v
+origin  https://github.com/Sparsh-kandwal/Python-beginner-code.git (fetch)
+origin  https://github.com/Sparsh-kandwal/Python-beginner-code.git (push)
+PS F:\python for beginear> git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 340 bytes | 113.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Sparsh-kandwal/Python-beginner-code.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS F:\python for beginear> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS F:\python for beginear> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS F:\python for beginear> git add .
+PS F:\python for beginear> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.txt
+
+PS F:\python for beginear> git commit -m "This is my second commit"
+[main 8b977d7] This is my second commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS F:\python for beginear> git remote -v
+origin  https://github.com/Sparsh-kandwal/Python-beginner-code.git (fetch)
+origin  https://github.com/Sparsh-kandwal/Python-beginner-code.git (push)
+PS F:\python for beginear> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 384 bytes | 128.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Sparsh-kandwal/Python-beginner-code.git
+   36e2dc0..8b977d7  main -> main
+PS F:\python for beginear> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        1.0-basic.ipynb
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS F:\python for beginear> git add .
+warning: in the working copy of '1.0-basic.ipynb', LF will be replaced by CRLF the next time Git touches it
+PS F:\python for beginear> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   1.0-basic.ipynb
+
+PS F:\python for beginear> git commit -m "This is my third commit"
+[main 39bf02c] This is my third commit
+ 1 file changed, 2742 insertions(+)
+ create mode 100644 1.0-basic.ipynb
+PS F:\python for beginear> git remote -v
+origin  https://github.com/Sparsh-kandwal/Python-beginner-code.git (fetch)
+origin  https://github.com/Sparsh-kandwal/Python-beginner-code.git (push)
+PS F:\python for beginear> git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 6.93 KiB | 1.15 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Sparsh-kandwal/Python-beginner-code.git
+   8b977d7..39bf02c  main -> main
+PS F:\python for beginear> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS F:\python for beginear>
